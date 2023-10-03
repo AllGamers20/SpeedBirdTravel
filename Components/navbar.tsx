@@ -3,18 +3,29 @@ import Logo from "./Logo"
 
 function Navbar(){
  return(
-    <div>
-        <nav className="w-full fixed   top-0 left-0 right-0 z-10">
-            <div className="justify-between px-4 lg:max-w-7xl md:items-center md:flex md:px-8">
-                <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Link href={'/'}>
-                            <Logo/>
-                        </Link>
-                    </div>
-                </div>
+    <div className="fixed bg-white top w-[100%] z-20 ">
+        <div className="container mx-auto flex justify-between items-center px-4 py-4">
+            <Link href={'/'} className="flex gap-1 items-center">
+                <Logo/>
+            </Link>
+            <div className="flex gap-10 ">
+                <Link href={'/'} className="hover:text-blue-400">
+                    Services
+                </Link>                
+                <Link href={'/'} className="hover:text-blue-400">
+                    Packages
+                </Link>                
+                <Link href={'/'} className="hover:text-blue-400">
+                    About Us
+                </Link>                
+                <Link href={'/'} className="hover:text-blue-400">
+                    Contact Us
+                </Link>                
             </div>
-        </nav>
+            <div>
+                <button className="border border-main py-2 px-4 rounded-2xl text-main hover:bg-main hover:text-white"> Get Started</button>
+            </div>
+        </div>
     </div>
  )
 }
