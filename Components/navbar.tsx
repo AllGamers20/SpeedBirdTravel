@@ -3,6 +3,7 @@ import Logo from "./Logo"
 import {FiMenu} from "react-icons/fi"
 import {AiOutlineClose} from "react-icons/ai"
 import  React , { useState } from 'react'
+import {FaFacebook,FaWhatsapp,FaInstagram} from 'react-icons/fa'
 
 
 const Navbar = () => {
@@ -40,11 +41,24 @@ const Navbar = () => {
         {navbar && (
             <div className="md:hidden">
                 <div className="px-2 pt-2 space-y-1 sm:px-3 ">
-                <Link href={'/'} className="hover:text-blue-400 p-5 block">Services</Link>      
-                <Link href={'/'} className="hover:text-blue-400 p-5 block">Packages</Link>                
-                <Link href={'/'} className="hover:text-blue-400 p-5 block">About Us</Link>                
-                <Link href={'/'} className="hover:text-blue-400 p-5 block">Contact Us</Link>
+                    <Link href={'/'} className="hover:text-blue-400 p-5 block">Services</Link>      
+                    <Link href={'/'} className="hover:text-blue-400 p-5 block">Packages</Link>                
+                    <Link href={'/'} className="hover:text-blue-400 p-5 block">About Us</Link>                
+                    <Link href={'/'} className="hover:text-blue-400 p-5 block">Contact Us</Link>
+                    <div className='flex gap-5 items-center'>
+            <div className='bg-main w-[1.5px] h-[250px]'></div>
+                <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
+                    <FaFacebook size={25} className='text-main hover:translate-x-1.5'/>
+                </Link>
+                <Link href={'https://wa.me/+961 71 367 510'} target='_blank'>
+                    <FaWhatsapp size={25} className='text-main hover:translate-x-1.5'/>
+                </Link>
+                <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
+                    <FaInstagram size={25} className='text-main hover:translate-x-1.5'/>
+                </Link>
+            </div>
                 </div>
+
             </div>
         )}
 
