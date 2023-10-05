@@ -12,14 +12,14 @@ const Navbar = () => {
         setNavbar(!navbar);
       };
  return(
-    <div className="fixed bg-white top w-[100%] z-20 ">
+    <div className="fixed bg-white top w-[100%] z-20 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4 py-4">
             <Link href={'/'} className="flex gap-1 items-center">
                 <Logo/>
             </Link>
             <div className=" hidden md:flex gap-10 tracking-wider">
-                <Link href={'/'} className="hover:text-blue-400">Services</Link>                
-                <Link href={'/'} className="hover:text-blue-400">Packages</Link>                
+                <Link href={'#Services'} className="hover:text-blue-400">Services</Link>                
+                <Link href={'Packages'} className="hover:text-blue-400">Packages</Link>                
                 <Link href={'/'} className="hover:text-blue-400">About Us</Link>                
                 <Link href={'/'} className="hover:text-blue-400">Contact Us</Link>                
             </div>
@@ -46,18 +46,19 @@ const Navbar = () => {
                     <Link href={'/'} className="hover:text-blue-400 p-5 block">About Us</Link>                
                     <Link href={'/'} className="hover:text-blue-400 p-5 block">Contact Us</Link>
                     <div className='flex gap-5 items-center'>
-            <div className='bg-main w-[1.5px] h-[250px]'></div>
+            <div></div>
                 <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
-                    <FaFacebook size={25} className='text-main hover:translate-x-1.5'/>
+                    <FaFacebook size={25} className='text-main hover:translate-y-1.5 duration-300'/>
                 </Link>
                 <Link href={'https://wa.me/+961 71 367 510'} target='_blank'>
-                    <FaWhatsapp size={25} className='text-main hover:translate-x-1.5'/>
+                    <FaWhatsapp size={25} className='text-main hover:translate-y-1.5 duration-300'/>
                 </Link>
                 <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
-                    <FaInstagram size={25} className='text-main hover:translate-x-1.5'/>
+                    <FaInstagram size={25} className='text-main hover:translate-y-1.5 duration-300'/>
                 </Link>
             </div>
                 </div>
+                <div className="py-3 px-3"></div>
 
             </div>
         )}

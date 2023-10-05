@@ -27,13 +27,13 @@ const Hero = () => {
         <div className='hidden absolute right-20 top-32 z-10 md:flex flex-col gap-5 items-center'>
             <div className='bg-main w-[1.5px] h-[250px]'></div>
             <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
-                <FaFacebook size={25} className='text-main hover:translate-x-1.5'/>
+                <FaFacebook size={25} className='text-main hover:translate-x-1.5 duration-300'/>
             </Link>
             <Link href={'https://wa.me/+961 71 367 510'} target='_blank'>
-                <FaWhatsapp size={25} className='text-main hover:translate-x-1.5'/>
+                <FaWhatsapp size={25} className='text-main hover:translate-x-1.5 duration-300'/>
             </Link>
             <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
-                <FaInstagram size={25} className='text-main hover:translate-x-1.5'/>
+                <FaInstagram size={25} className='text-main hover:translate-x-1.5 duration-300'/>
             </Link>
         </div>
     </div>
