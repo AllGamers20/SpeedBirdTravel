@@ -4,13 +4,20 @@ import Card from './Card'
 
 const Product = () => {
   return (
-    <section className='max-w-[1640px] mx-auto p-4 py-12' id='Services'>
-        <HeadLine title={'Services'}/>
-        <div className='grid md:grid-cols-2 lg: grid-cols-3 gap-6 px-20 py-12 -bottom-20 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300'>
-            <Card image="/spaincard.jpg" title={'spain'} x={200} y={100}/>
+    <section className='max-w-[1640px]  p-4 px-4 py-12' id='Packages'>
+        <HeadLine title={'Packages'}/>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-20 py-12'>
+            <Card image="/assets/spain.png" title='spain'/>
+            <Card image="/assets/Bali.png" title='Bali'/>
+            <Card image="/assets/dubai.png" title='Dubai'/>
+            <Card image="/assets/Paris.png" title='Paris'/>
+            <Card image="/assets/china.png" title='China'/>
+            <Card image="/assets/antalya.png" title='Antalya'/>
+            <Card image="/assets/cyprus.png" title='Cyprus'/>
+            <Card image="/assets/georgia.png" title='Georgia'/>
+            <Card image="/assets/Maldive.png" title='Maldive'/>
         </div>
     </section>
   )
 }
-
 export default Product

@@ -20,7 +20,7 @@ const Hero = () => {
                     <p className='text-xl text-gray-300 tracking-widest'>best way to fly safetly</p>
                 </div>
                 <div>
-                    <Button text={'Click For Offers'} link={'#'}/>
+                    <Button text={'Click For Offers'} link={'#Packages'}/>
                 </div>
             </div>
         </div>

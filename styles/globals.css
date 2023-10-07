@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 @layer components{
+    
     .btn{
         @apply bg-main py-2 px-4 rounded-lg inline-block font-semibold border border-main hover:bg-transparent hover:text-main transition duration-300
     }
 }
+
+@layer base{
+    html{
+        @apply scroll-smooth;
+    }
+    
+}
+
