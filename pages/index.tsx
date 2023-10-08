@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from '@/Components/Hero'
 import Product from '@/Components/Product'
 import Head from 'next/head'
+import Services from '@/Components/Services'
 const index = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const index = () => {
         <Navbar/>
         <Hero/>
         <Product/>
+        <Services/>
     </>
 
   )

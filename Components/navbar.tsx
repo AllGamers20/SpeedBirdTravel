@@ -50,7 +50,7 @@ const Navbar = () => {
                 <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
                     <FaFacebook size={25} className='text-main hover:translate-y-1.5 duration-300'/>
                 </Link>
-                <Link href={'https://wa.me/+961 71 367 510'} target='_blank'>
+                <Link href={'https://wa.me/+96171367510'} target='_blank'>
                     <FaWhatsapp size={25} className='text-main hover:translate-y-1.5 duration-300'/>
                 </Link>
                 <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
