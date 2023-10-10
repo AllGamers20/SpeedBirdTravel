@@ -4,6 +4,8 @@ import Hero from '@/Components/Hero'
 import Product from '@/Components/Product'
 import Head from 'next/head'
 import Services from '@/Components/Services'
+import AboutUs from '@/Components/AboutUS'
+import Footer from '@/Components/Footer'
 const index = () => {
   return (
     <>
@@ -15,6 +17,8 @@ const index = () => {
         <Hero/>
         <Product/>
         <Services/>
+        <AboutUs/>
+        <Footer/>
     </>
 
   )

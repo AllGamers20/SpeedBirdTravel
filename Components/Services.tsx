@@ -4,7 +4,7 @@ import { data } from '@/pages/_data';
 
 const Services = () => {
   return (
-    <section className='flex flex-col py-20 bg-light' id='Services'>
+    <section className='flex flex-col bg-light' id='Services'>
       <div className='container px-4 mx-auto'>
         <div className='mx-auto mb-20'>
           <HeadLine title={'Services'} />

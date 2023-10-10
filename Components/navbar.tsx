@@ -20,8 +20,8 @@ const Navbar = () => {
             <div className=" hidden md:flex gap-10 tracking-wider">               
                 <Link href={'#Packages'} className="hover:text-blue-400">Packages</Link>
                 <Link href={'#Services'} className="hover:text-blue-400">Services</Link>                 
-                <Link href={'/'} className="hover:text-blue-400">About Us</Link>                
-                <Link href={'/'} className="hover:text-blue-400">Contact Us</Link>                
+                <Link href={'#AboutUs'} className="hover:text-blue-400">About Us</Link>                
+                <Link href={'#ContactUs'} className="hover:text-blue-400">Contact Us</Link>                
             </div>
             <div>
                 <button className=" hidden md:block border border-main py-2 px-4 rounded-2xl text-main hover:bg-main hover:text-white"> Get Started</button>
@@ -42,9 +42,9 @@ const Navbar = () => {
             <div className="md:hidden">
                 <div className="px-2 pt-2 space-y-1 sm:px-3 ">     
                     <Link href={'#Packages'} className="hover:text-blue-400 p-5 block">Packages</Link>
-                    <Link href={'/'} className="hover:text-blue-400 p-5 block">Services</Link>                 
-                    <Link href={'/'} className="hover:text-blue-400 p-5 block">About Us</Link>                
-                    <Link href={'/'} className="hover:text-blue-400 p-5 block">Contact Us</Link>
+                    <Link href={'#Services'} className="hover:text-blue-400 p-5 block">Services</Link>                 
+                    <Link href={'#AboutUs'} className="hover:text-blue-400 p-5 block">About Us</Link>                
+                    <Link href={'#ContactUs'} className="hover:text-blue-400 p-5 block">Contact Us</Link>
                     <div className='flex gap-5 items-center'>
             <div></div>
                 <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
