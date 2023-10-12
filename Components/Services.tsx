@@ -4,9 +4,9 @@ import { data } from '@/pages/_data';
 
 const Services = () => {
   return (
-    <section className='flex flex-col bg-light' id='Services'>
-      <div className='container px-4 mx-auto'>
-        <div className='mx-auto mb-20'>
+    <section className='container px-4 mx-auto' id='Services'>
+      <div className='flex flex-col bg-light'>
+        <div className='mx-auto mb-10'>
           <HeadLine title={'Services'} />
           <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-4 md:px-20 py-16'>
             {Object.values(data.items).map((item) => (

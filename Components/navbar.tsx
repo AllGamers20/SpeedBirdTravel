@@ -48,13 +48,13 @@ const Navbar = () => {
                     <div className='flex gap-5 items-center'>
             <div></div>
                 <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
-                    <FaFacebook size={25} className='text-main hover:translate-y-1.5 duration-300'/>
+                    <FaFacebook size={25} className='text-main hover:translate-y-1.5 duration-300 hover:text-blue-700'/>
                 </Link>
                 <Link href={'https://wa.me/+96171367510'} target='_blank'>
-                    <FaWhatsapp size={25} className='text-main hover:translate-y-1.5 duration-300'/>
+                    <FaWhatsapp size={25} className='text-main hover:translate-y-1.5 duration-300 hover:text-green-500'/>
                 </Link>
                 <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
-                    <FaInstagram size={25} className='text-main hover:translate-y-1.5 duration-300'/>
+                    <FaInstagram size={25} className='text-main hover:translate-y-1.5 duration-300 hover:text-yellow-300'/>
                 </Link>
             </div>
                 </div>

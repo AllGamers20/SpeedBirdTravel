@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const AboutUS = () => {
   return (
-    <section className='w-screen ' id='AboutUs'>
-        <div className='flex flex-1 justify-start items-center flex-col gap-6'>
+    <section id='AboutUs'>
+        <div className='flex flex-1 justify-center items-center flex-col gap-6'>
                 <HeadLine title={'About Us'}/>
                 <div className='flex items-center justify-center flex-col gap-6 '>
                    <p className='text-2xl uppercase font-light'>SpeedBird</p>
