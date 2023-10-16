@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        nunito: ['var(--font-nunito)'],
+        aleo: ['var(--font-aleo)'],
+      },
       colors:{
         "main" : '#1E90FF'
       }

@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link href={'/'} className="flex gap-1 items-center">
                 <Logo/>
             </Link>
-            <div className=" hidden md:flex gap-10 tracking-wider">               
+            <div className=" hidden md:flex gap-10 tracking-wider font-nunito">               
                 <Link href={'#Packages'} className="hover:text-blue-400">Packages</Link>
                 <Link href={'#Services'} className="hover:text-blue-400">Services</Link>                 
                 <Link href={'#AboutUs'} className="hover:text-blue-400">About Us</Link>                
