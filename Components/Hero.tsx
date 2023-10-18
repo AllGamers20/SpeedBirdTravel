@@ -44,7 +44,7 @@ const Hero = () => {
       };
     
       return (
-        <div className='max-w-[1640px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+        <div className='max-w-[1640px] h-[780px] w-full  m-auto  relative group'>
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
             className='w-full h-full  bg-center bg-cover duration-500'
@@ -68,6 +68,18 @@ const Hero = () => {
               </div>
             ))}
           </div>
+          <div className='hidden absolute right-20 top-32 z-10 md:flex flex-col gap-5 items-center'>
+            <div className='bg-main w-[1.5px] h-[250px]'></div>
+            <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
+                <FaFacebook size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-blue-700'/>
+            </Link>
+            <Link href={'https://wa.me/+96171367510'} target='_blank'>
+                <FaWhatsapp size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-green-500'/>
+            </Link>
+            <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
+                <FaInstagram size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-yellow-300'/>
+            </Link>
+        </div>
         </div>
       );
 }
