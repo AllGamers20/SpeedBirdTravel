@@ -8,20 +8,20 @@ import { RxDotFilled } from 'react-icons/rx';
 const Hero = () => {
     const slides = [
         {
-          url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
+          url: 'https://mmf5angy.twic.pics/ahstatic/www.ahstatic.com/photos/b1j0_ho_00_p_1024x768.jpg?ritok=65&twic=v1/cover=1600x900',
         },
         {
-          url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+          url: 'https://s7g10.scene7.com/is/image/stena/20150820_berlin-brandenburg-gate:29-9?ts=1656740748478&dpr=off',
         },
         {
-          url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
+          url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/96/cc/68/isla-del-sol.jpg?w=1200&h=-1&s=1',
         },
     
         {
-          url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
+          url: 'https://youimg1.tripcdn.com/target/01018120008x848xp1F5C_C_880_350_R5.jpg',
         },
         {
-          url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+          url: 'https://meydanbesiktasotel.com/wp-content/uploads/2019/11/taksim.jpg',
         },
       ];
     
@@ -46,7 +46,7 @@ const Hero = () => {
 
 
       return (
-        <div className='max-w-full w-full m-auto relative group'>
+        <div className='max-w-full w-full m-auto relative group '>
           <div
             style={{
               backgroundImage: `url(${slides[currentIndex].url})`,
