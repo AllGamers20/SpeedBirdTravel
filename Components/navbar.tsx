@@ -13,9 +13,7 @@ const Navbar = () => {
     setNavbar(!navbar);
   };
 
-  const closeNavbar = () => {
-    setNavbar(false);
-  };
+
 
   // Function to handle scroll and change background color
   const handleScroll = () => {
@@ -38,24 +36,25 @@ const Navbar = () => {
   return (
     <div
       className={`fixed top w-[100%] z-20 ${
-        navbar ? "bg-white text-black shadow-md" : "bg-transparent text-white "
+        navbar ? "bg-white text-black shadow-md" : "text-white"
       }`}
+      style={{ backgroundColor: navbar ? '#ffffff' : 'transparent'}}
     >
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link href={"/"} className="flex gap-1 items-center">
           <Logo />
         </Link>
         <div className="hidden md:flex gap-10 tracking-wider font-nunito">
-          <Link href={"#Packages"} className="hover:text-blue-400" onClick={()=>closeNavbar()}>
+          <Link href={"#Packages"} className="hover:text-blue-400" >
             Packages
           </Link>
-          <Link href={"#Services"} className="hover:text-blue-400" onClick={()=>closeNavbar()}>
+          <Link href={"#Services"} className="hover:text-blue-400" >
             Services
           </Link>
-          <Link href={"#AboutUs"} className="hover:text-blue-400" onClick={()=>closeNavbar()}>
+          <Link href={"#AboutUs"} className="hover:text-blue-400" >
             About Us
           </Link>
-          <Link href={"#ContactUs"} className="hover:text-blue-400" onClick={()=>closeNavbar()}>
+          <Link href={"#ContactUs"} className="hover:text-blue-400" >
             Contact Us
           </Link>
         </div>
@@ -72,23 +71,25 @@ const Navbar = () => {
               toggleNavbar();
             }}
             size={30}
-            className="md:hidden block"
+            className= {`md:hidden block ${
+              navbar ? "bg-white text-black shadow-md" : "text-white"
+            }`}
           />
         )}
       </div>
       {navbar && (
         <div className="md:hidden">
           <div className="px-2 pt-2 space-y-1 sm:px-3">
-            <Link href={"#Packages"} className="hover:text-blue-400 p-5 block" onClick={()=>closeNavbar()}>
+            <Link href={"#Packages"} className="hover:text-blue-400 p-5 block">
               Packages
             </Link>
-            <Link href={"#Services"} className="hover:text-blue-400 p-5 block" onClick={()=>closeNavbar()}>
+            <Link href={"#Services"} className="hover:text-blue-400 p-5 block">
               Services
             </Link>
-            <Link href={"#AboutUs"} className="hover:text-blue-400 p-5 block" onClick={()=>closeNavbar()}>
+            <Link href={"#AboutUs"} className="hover:text-blue-400 p-5 block">
               About Us
             </Link>
-            <Link href={"#ContactUs"} className="hover:text-blue-400 p-5 block" onClick={()=>closeNavbar()}>
+            <Link href={"#ContactUs"} className="hover:text-blue-400 p-5 block">
               Contact Us
             </Link>
             <div className="flex gap-5 items-center">
@@ -104,7 +105,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <div className="py-3 px-3"></div>
+          <div className={`py-3 px-3 ${navbar ? "bg-white text-black shadow-md" : "bg-transparent text-white"}`}></div>
         </div>
       )}
     </div>

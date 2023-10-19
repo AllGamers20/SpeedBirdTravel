@@ -43,11 +43,18 @@ const Hero = () => {
         setCurrentIndex(slideIndex);
       };
     
+
+
       return (
-        <div className='max-w-[1640px] h-[780px] w-full  m-auto  relative group'>
+        <div className='max-w-full w-full m-auto relative group'>
           <div
-            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className='w-full h-full  bg-center bg-cover duration-500'
+            style={{
+              backgroundImage: `url(${slides[currentIndex].url})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+            }}
+            className='w-full h-[780px] md:h-[480px] sm:h-[280px] bg-center duration-500'
           ></div>
           {/* Left Arrow */}
           <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
@@ -69,17 +76,16 @@ const Hero = () => {
             ))}
           </div>
           <div className='hidden absolute right-20 top-32 z-10 md:flex flex-col gap-5 items-center'>
-            <div className='bg-main w-[1.5px] h-[250px]'></div>
             <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target='_blank'>
-                <FaFacebook size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-blue-700'/>
+              <FaFacebook size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-blue-700' />
             </Link>
             <Link href={'https://wa.me/+96171367510'} target='_blank'>
-                <FaWhatsapp size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-green-500'/>
+              <FaWhatsapp size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-green-500' />
             </Link>
             <Link href={'https://www.instagram.com/speedbirdtravellb/'} target='_blank'>
-                <FaInstagram size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-yellow-300'/>
+              <FaInstagram size={25} className='text-main hover:translate-x-1.5 duration-300 hover:text-yellow-300' />
             </Link>
-        </div>
+          </div>
         </div>
       );
 }
