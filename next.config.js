@@ -2,8 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
 }
+const withTM = require('next-transpile-modules')(['swiper']);
 
-module.exports = {
+module.exports = withTM({
+  webpack5: true,
   images: {
     // limit of 25 deviceSizes values
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -34,4 +36,6 @@ module.exports = {
     // when true, every image will be unoptimized
     unoptimized: false,
   },
-}
+});
+
+
