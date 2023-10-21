@@ -7,23 +7,38 @@ import Link from 'next/link';
 const Hero = () => {
   const slides = [
     {
+      text: 'SpeedBird Travel',
+      subtext: 'Company offers you the fastest route to unforgettable global adventures',
       url:
-        'https://mmf5angy.twic.pics/ahstatic/www.ahstatic.com/photos/b1j0_ho_00_p_1024x768.jpg?ritok=65&twic=v1/cover=1600x900',
+        'https://lp-cms-production.imgix.net/2019-06/GettyImages-140533581_large.jpg?auto=format&w=1920&h=640&fit=crop&crop=faces,edges&q=75',
+      textcolor: 'dodgerblue',
     },
     {
+      text: 'Fast-Track Adventures',
+      subtext: 'Your passport to high-speed exploration and lasting memories.',
       url:
-        'https://s7g10.scene7.com/is/image/stena/20150820_berlin-brandenburg-gate:29-9?ts=1656740748478&dpr=off',
+      'https://s7g10.scene7.com/is/image/stena/20150820_berlin-brandenburg-gate:29-9?ts=1656740748478&dpr=off',
+      textcolor: 'lime'
     },
     {
+      text: 'Exploration',
+      subtext: 'Jet-Set Exploration for the modern traveler.',
       url:
-        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/96/cc/68/isla-del-sol.jpg?w=1200&h=-1&s=1',
+        'https://i.natgeofe.com/k/84807eaf-d314-42fe-b329-7cf391ddc8d0/Bolivia-La-Paz.jpg?w=1084.125&h=609',
+      textcolor:'orange'
     },
     {
+      text: ' Faster to the Worlds Wonders',
+      subtext: 'you can experience the worlds wonders without delay.',
       url: 
         'https://idsb.tmgrup.com.tr/ly/uploads/images/2022/04/01/195589.jpg',
+      textcolor: 'red'
     },
     {
-      url: 'https://meydanbesiktasotel.com/wp-content/uploads/2019/11/taksim.jpg',
+      text: 'Travel at the Speed of Dreams',
+      subtext: 'Your express ticket to extraordinary journeys.',
+      url: 'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/475000/475296-Turkey.jpg',
+      textcolor: 'blue'
     },
   ];
 
@@ -58,10 +73,18 @@ const Hero = () => {
         {loopedSlides.map((slide, slideIndex) => (
           <SwiperSlide key={slideIndex}>
             <div
-              className="w-full h-60 md:h-[750px] bg-cover bg-center"
-              // Adjust the height for mobile (e.g., h-60) and tablet/desktop (e.g., md:h-80)
+              className="w-full h-60 md:h-[600px] bg-cover bg-center relative"
               style={{ backgroundImage: `url(${slide.url})` }}
-            ></div>
+            >
+              <div className='absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-start  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center'>
+                <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold'>
+                  {slide.text}
+                </h1>
+                <p className='font-light text-sm md:text-md tracking-wider text-lime-400'>
+                  {slide.subtext}
+                </p>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
