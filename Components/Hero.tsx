@@ -20,7 +20,7 @@ const Hero = () => {
     },
     {
       url: 
-        'https://youimg1.tripcdn.com/target/01018120008x848xp1f5c_c_880_350_r5.jpg',
+        'https://idsb.tmgrup.com.tr/ly/uploads/images/2022/04/01/195589.jpg',
     },
     {
       url: 'https://meydanbesiktasotel.com/wp-content/uploads/2019/11/taksim.jpg',
@@ -58,7 +58,7 @@ const Hero = () => {
         {loopedSlides.map((slide, slideIndex) => (
           <SwiperSlide key={slideIndex}>
             <div
-              className="w-full h-60 md:h-80 bg-cover bg-center"
+              className="w-full h-60 md:h-[750px] bg-cover bg-center"
               // Adjust the height for mobile (e.g., h-60) and tablet/desktop (e.g., md:h-80)
               style={{ backgroundImage: `url(${slide.url})` }}
             ></div>
