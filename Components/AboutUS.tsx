@@ -9,7 +9,7 @@ const AboutUS = () => {
         <div className='flex flex-1 justify-center items-center flex-col gap-6'>
                 <HeadLine title={'About Us'}/>
                 <div className='flex items-center justify-center flex-col gap-6 '>
-                   <p className='w-3/5 text-center text-2xl'> Speed Bird Travel Agency is your passport to exceptional travel experiences.  Founded by passionate travelers our mission is to make your journeys stress free and unforgettable.</p>
+                   <p className='w-3/5 text-center text-xl md:text-3xl p-6 font-dale text-main'> Speed Bird Travel Agency is your passport to exceptional travel experiences.  Founded by passionate travelers our mission is to make your journeys stress free and unforgettable.</p>
                    <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-6 px-20 py-16'>
                     <Image src={'/img/Logo.png'} alt='Logo' width={150} height={150}/>
                     <Image src={'/img/MEA.jpg'} alt='Logo' width={200} height={200}/>

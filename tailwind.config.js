@@ -10,15 +10,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
+        dale: ['var(--font-dale)'],
         nunito: ['var(--font-nunito)'],
-        aleo: ['var(--font-aleo)'],
+        airspace: ['var(--font-AirSpace)'],
+        campfire: ['var(--font-CampFire)'],
       },
-      colors:{
-        "main" : '#1E90FF'
-      }
+      colors: {
+        main: '#1E90FF',
+        gradient: {
+          'from': 'DodgerBlue',
+          'to': 'Lime',
+        },
+      },
+      linearGradientColors: {
+        'gradient': ['from-DodgerBlue', 'to-Lime'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'), // Make sure to install this plugin
+  ],
 }
-

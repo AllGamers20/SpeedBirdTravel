@@ -49,7 +49,7 @@ const Navbar = () => {
         <Link href={"/"} className="flex gap-1 items-center" onClick={closeMobileMenu}>
           <Logo />
         </Link>
-        <div className="hidden md:flex gap-10 tracking-wider font-nunito">
+        <div className="hidden md:flex gap-10 tracking-wider font-airspace font-thin">
           <Link
             href={"#Packages"}
             className="hover:text-blue-400"
@@ -80,7 +80,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <button className="hidden md:block border border-main py-2 px-4 rounded-2xl text-main hover:bg-main hover:text-white">
+          <button className="hidden md:block border border-main py-2 px-4 rounded-2xl text-main hover:bg-main hover:text-white font-airspace">
             Get Started
           </button>
         </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
         )}
       </div>
       {mobileMenuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden  font-airspace ">
           <div className="px-2 pt-2 space-y-1 sm:px-3">
             <Link
               href={"#Packages"}

@@ -1,10 +1,11 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { aleo, nunito } from '@/pages/fonts';
+import { AirSpace, CampFire, dale, nunito } from './fonts';
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
-    <main className={`${nunito.variable}`} >
+    <main className={`${dale.variable} ${nunito.variable} ${CampFire.variable} ${AirSpace.variable} `}>
       <Component {...pageProps} />
     </main>
     

@@ -77,10 +77,10 @@ const Hero = () => {
               style={{ backgroundImage: `url(${slide.url})` }}
             >
               <div className='absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-start  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center'>
-                <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold'>
+                <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold font-dale'>
                   {slide.text}
                 </h1>
-                <p className='font-light text-sm md:text-md tracking-wider text-lime-400'>
+                <p className='font-extralight text-sm md:text-md tracking-wider text-lime-400 font-campfire'>
                   {slide.subtext}
                 </p>
               </div>
