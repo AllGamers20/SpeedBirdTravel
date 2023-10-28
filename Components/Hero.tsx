@@ -80,7 +80,7 @@ const Hero = () => {
                 <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold font-dale'>
                   {slide.text}
                 </h1>
-                <p className='font-extralight text-sm md:text-md tracking-wider text-lime-400 font-campfire'>
+                <p className='font-extralight text-xs md:text-md tracking-wider text-lime-400 font-campfire'>
                   {slide.subtext}
                 </p>
               </div>
