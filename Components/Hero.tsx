@@ -76,7 +76,7 @@ const Hero = () => {
               className="w-full h-60 md:h-[600px] bg-cover bg-center relative"
               style={{ backgroundImage: `url(${slide.url})` }}
             >
-              <div className='absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-start  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center'>
+              <div className='absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-center  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center'>
                 <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold font-dale'>
                   {slide.text}
                 </h1>

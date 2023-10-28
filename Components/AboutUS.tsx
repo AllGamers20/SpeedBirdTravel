@@ -6,7 +6,7 @@ import Image from 'next/image'
 const AboutUS = () => {
   return (
     <section id='AboutUs'>
-        <div className='flex flex-1 justify-center items-center flex-col gap-6'>
+        <div className='flex flex-wrap justify-center items-center flex-col gap-6'>
                 <HeadLine title={'About Us'}/>
                 <div className='flex items-center justify-center flex-col gap-6 '>
                    <p className='w-3/5 text-center text-xl md:text-3xl p-6 font-airspace text-main font-bold'> Speed Bird Travel Agency is your passport to exceptional travel experiences.  Founded by passionate travelers our mission is to make your journeys stress free and unforgettable.</p>
