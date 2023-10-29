@@ -10,6 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'parallex': 'url("../public/img/bg1.jpg")',
+        'parallex-2': 'url("../public/img/bg2.jpg")',
+        'parallex-3': 'url("../public/img/bg3.jpeg")',
+        'parallex-4': 'url("../public/img/bg4.jpg")',
+      },
       fontFamily: {
         dale: ['var(--font-dale)'],
         nunito: ['var(--font-nunito)'],

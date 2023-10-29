@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import Link from 'next/link';
 
@@ -46,15 +46,6 @@ const Hero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
-    const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % slides.length;
-    setCurrentIndex(newIndex);
-  };
 
   return (
     <div className="max-w-full w-full m-auto relative group">
@@ -64,8 +55,12 @@ const Hero = () => {
         centeredSlides={true}
         loop={true}
         navigation={{
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
+        autoplay={{
+          delay: 5000, // 5 seconds between each slide
+          disableOnInteraction: false, // Prevent autoplay interruption on user interaction
         }}
         onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
         initialSlide={slides.length}
@@ -76,11 +71,11 @@ const Hero = () => {
               className="w-full h-60 md:h-[600px] bg-cover bg-center relative"
               style={{ backgroundImage: `url(${slide.url})` }}
             >
-              <div className='absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-center  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center'>
-                <h1 className='text-3xl text-main md:text-7xl tracking-wider font-bold font-dale'>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/60 text-center  flex flex-col gap-[20px] md:gap-[40px] items-center justify-center">
+                <h1 className="text-3xl text-main md:text-7xl tracking-wider font-bold font-dale">
                   {slide.text}
                 </h1>
-                <p className='font-extralight text-xs md:text-md tracking-wider text-lime-400 font-campfire'>
+                <p className="font-extralight text-xs md:text-md tracking-wider text-lime-400 font-campfire">
                   {slide.subtext}
                 </p>
               </div>
@@ -94,7 +89,7 @@ const Hero = () => {
           <div
             key={slideIndex}
             className={`h-2 w-20 bg-white mx-2 cursor-pointer ${
-              currentIndex === slideIndex ? 'bg-blue-700' : ''
+              currentIndex === slideIndex ? "bg-blue-700" : ""
             }`}
             onClick={() => setCurrentIndex(slideIndex)}
           ></div>
@@ -102,19 +97,25 @@ const Hero = () => {
       </div>
 
       <div className="hidden md:absolute right-20 top-32 z-10 md:flex flex-col gap-5 items-center font-nunito font-bold">
-        <Link href={'https://www.facebook.com/SpeedbirdLebanon'} target="_blank">
+        <Link
+          href={"https://www.facebook.com/SpeedbirdLebanon"}
+          target="_blank"
+        >
           <FaFacebook
             size={25}
             className="text-main hover:translate-x-1.5 duration-300 hover:text-blue-700"
           />
         </Link>
-        <Link href={'https://wa.me/+96171367510'} target="_blank">
+        <Link href={"https://wa.me/+96171367510"} target="_blank">
           <FaWhatsapp
             size={25}
             className="text-main hover:translate-x-1.5 duration-300 hover:text-green-500"
           />
         </Link>
-        <Link href={'https://www.instagram.com/speedbirdtravellb/'} target="_blank">
+        <Link
+          href={"https://www.instagram.com/speedbirdtravellb/"}
+          target="_blank"
+        >
           <FaInstagram
             size={25}
             className="text-main hover:translate-x-1.5 duration-300 hover:text-yellow-300"

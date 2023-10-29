@@ -1,12 +1,12 @@
-import React from 'react'
-import HeadLine from './HeadLine'
-import Card from './Card'
+import React from 'react';
+import HeadLine from './HeadLine';
+import Card from './Card';
 
 const Product = () => {
   return (
     <section className=' flex flex-col items-center justify-between  mx-auto p-4 px-4 py-16' id='Packages'>
         <HeadLine title={'Packages'}/>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-20 py-16'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-20 py-16 '>
             <Card image="/assets/spain.png" title='Spain'/>
             <Card image="/assets/Bali.png" title='Bali'/>
             <Card image="/assets/dubai.png" title='Dubai'/>
@@ -17,8 +17,8 @@ const Product = () => {
             <Card image="/assets/georgia.png" title='Georgia'/>
             <Card image="/assets/Maldive.png" title='Maldive'/>
         </div>
-
     </section>
-  )
-}
-export default Product
+  );
+};
+
+export default Product;
