@@ -45,11 +45,11 @@ const Navbar = () => {
           : "bg-transparent text-white"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 py-4">
+      <div className="container mx-auto flex justify-between items-center px-4 py-4 font-bold">
         <Link href={"/"} className="flex gap-1 items-center" onClick={closeMobileMenu}>
           <Logo />
         </Link>
-        <div className="hidden md:flex gap-10 tracking-wider font-airspace font-thin">
+        <div className="hidden md:flex gap-10 tracking-wider font-airspace ">
           <Link
             href={"#Packages"}
             className="hover:text-blue-400"

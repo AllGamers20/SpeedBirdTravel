@@ -6,7 +6,10 @@ import Head from 'next/head'
 import Services from '@/Components/Services'
 import AboutUs from '@/Components/AboutUS'
 import Footer from '@/Components/Footer'
+import SplashScreen from '@/Components/SplashScreen'
+import {usePathname} from 'next/navigation'
 const index = () => {
+  const pathname = usePathname();
   return (
     <>
         <Head>

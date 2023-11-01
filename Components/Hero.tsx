@@ -59,7 +59,7 @@ const Hero = () => {
           nextEl: ".swiper-button-next",
         }}
         autoplay={{
-          delay: 5000, // 5 seconds between each slide
+          delay: 2500, // 5 seconds between each slide
           disableOnInteraction: false, // Prevent autoplay interruption on user interaction
         }}
         onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
