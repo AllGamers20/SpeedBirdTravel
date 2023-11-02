@@ -15,15 +15,15 @@ const SplashScreen = ({ finishLoading }: { finishLoading: any }) => {
     loader.add({
       targets: "#Logo",
       scale: 1,
-      duration: 400,
+      duration: 500,
       easing: "easeInOutExpo",
     });
     loader.add({
       targets: "#Logo",
       scale: 1.50,
-      duration: 300,
+      duration: 500,
       easing: "easeInOutExpo",
-    });
+    })
 
     // Second animation: Move the logo to the right and fade out
     loader.add({
@@ -32,7 +32,7 @@ const SplashScreen = ({ finishLoading }: { finishLoading: any }) => {
       opacity: 0,
       duration: 600,
       easing: "easeOutExpo",
-      delay: 200, // Delay after the first animation
+      delay: 500, // Delay after the first animation
     });
   };
 
@@ -40,7 +40,7 @@ const SplashScreen = ({ finishLoading }: { finishLoading: any }) => {
     // Add a delay before starting the fade-in animation
     const fadeInTimeout = setTimeout(() => {
       setisMount(true);
-    }, 600);
+    }, 1000);
 
     // Start the animations
     animate();

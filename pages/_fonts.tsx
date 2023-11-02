@@ -1,5 +1,6 @@
 import LocalFont from 'next/font/local'
 import { Nunito } from 'next/font/google'
+import React from 'react'
 
 export const dale = LocalFont({
     src: "../public/fonts/Dale-Adventure.woff2",

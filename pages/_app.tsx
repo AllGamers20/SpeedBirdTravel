@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { AirSpace, CampFire, dale, nunito } from './fonts';
+import { AirSpace, CampFire, dale, nunito } from './_fonts';
 
 
 export default function App({ Component, pageProps }: AppProps) {

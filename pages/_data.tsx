@@ -3,6 +3,7 @@ import { FaTicketAlt, FaHotel } from 'react-icons/fa';
 import { PiAirplaneTiltBold } from 'react-icons/pi';
 import { MdHealthAndSafety } from 'react-icons/md';
 import { GrVisa } from 'react-icons/gr';
+import React from 'react';
 
 
   export const data = {

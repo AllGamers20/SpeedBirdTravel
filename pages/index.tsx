@@ -24,6 +24,7 @@ const index = () => {
         <Head>
           <title>Speed Bird</title>
           <link rel="shortcut icon" href="Logo.ico" type="image/x-icon" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
           {isLoading && isHome ? (
             <SplashScreen finishLoading={()=> setisLoading(false)}/>
