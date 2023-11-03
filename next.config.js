@@ -11,7 +11,7 @@ const PWA = require('next-pwa')({
 });
 
 module.exports = {
-  pageExtensions: ['mdx', 'md', 'jsx', 'js', '_fonts.tsx', 'ts'],
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
   ...nextConfig,
   ...PWA,
   images: {
