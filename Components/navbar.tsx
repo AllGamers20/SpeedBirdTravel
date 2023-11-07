@@ -79,11 +79,11 @@ const Navbar = () => {
             Contact Us
           </Link>
         </div>
-        <div>
+        <Link href={'./Form'}>
           <button className="hidden md:block border border-main py-2 px-4 rounded-2xl text-main hover:bg-main hover:text-white font-airspace">
             Get Started
           </button>
-        </div>
+        </Link>
         {mobileMenuOpen ? (
           <AiOutlineClose
             onClick={() => setMobileMenuOpen(false)}
