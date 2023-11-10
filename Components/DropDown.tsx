@@ -3,6 +3,10 @@ import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai';
 import { jsonData as Items } from "@/Data/Items";
 import Form2 from './Form2';
 import Form3 from './Form3';
+import Form4 from './Form4';
+import Packages from '@/pages/Packages';
+import Link from 'next/link';
+import Button from './Button';
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +21,13 @@ const DropDown = () => {
     if (isSelected) {
       // Determine which component to render based on the selected item.
       if (isSelected.type === 'One Way Travel') {
+        return <Form4 />;
+      } else if (isSelected.type === 'Round Trip') {
         return <Form2 />;
-      } else if (isSelected.type === 'Rounded Trip') {
-        return <Form2 />;
+      } else if(isSelected.type ==='Ready Mate Packages') {
+        return <div>
+            <Button text={'Continue'} link={'./Packages'}/>
+        </div>;
       }
       else{
         return <Form3/>
@@ -29,10 +37,11 @@ const DropDown = () => {
   };
 
   return (
-    <div className="relative flex flex-col items-center w-[340px] h-[340px] rounded">
+    <div className="relative flex flex-col items-center w-[340px] h-screen rounded gap-6">
       <button
         className="bg-gray-200 text-gray-500 w-full p-3 flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-main duration-300 active:text-main"
         onClick={() => setIsOpen((prev) => !prev)}
+        disabled={isSelected !== null} // Disable the button when an item is selected
       >
         {isSelected ? isSelected.type : "Choose Your Travel Type"}
         {!isOpen ? (
@@ -55,7 +64,9 @@ const DropDown = () => {
           ))}
         </div>
       )}
-      {renderSelectedComponent()} {/* Render the selected component */}
+      <div className='flex items-center justify-between'>
+        {renderSelectedComponent()} {/* Render the selected component */}
+      </div>
     </div>
   );
 };
