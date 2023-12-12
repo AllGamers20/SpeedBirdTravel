@@ -64,7 +64,7 @@ const DropDown = () => {
           ))}
         </div>
       )}
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between h-screen w-full'>
         {renderSelectedComponent()} {/* Render the selected component */}
       </div>
     </div>

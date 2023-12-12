@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import Submit from './Submit';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import WhatsAppWidget from "react-whatsapp-widget";
-import 'react-whatsapp-widget/dist/index.css';
+
 
 
 
@@ -95,7 +94,7 @@ const Form2 = () => {
           <ToastContainer />
           <Submit onClick={handleSubmit} />
           {/* WhatsApp Widget */}
-          <WhatsAppWidget phoneNumber="+96171367510" message="Hello! I'm interested in your services." />
+
         </div>
       </div>
     </>
