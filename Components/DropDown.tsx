@@ -51,7 +51,7 @@ const DropDown = () => {
         )}
       </button>
       {isOpen && (
-        <div className="bg-gray-200 absolute top-20 flex flex-col items-start rounded-lg p-4 w-full">
+        <div className="bg-gray-200 absolute top-20 flex flex-col items-start rounded-lg p-4 w-full z-10">
           {Items.map((item, i) => (
             <div
               className="flex w-full justify-between p-4 hover:bg-main cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4"
@@ -64,7 +64,7 @@ const DropDown = () => {
           ))}
         </div>
       )}
-      <div className='flex items-center justify-between h-screen w-full'>
+      <div className='flex items-center justify-between w-full'>
         {renderSelectedComponent()} {/* Render the selected component */}
       </div>
     </div>
