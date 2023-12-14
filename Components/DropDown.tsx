@@ -4,8 +4,6 @@ import { jsonData as Items } from "@/Data/Items";
 import Form2 from './Form2';
 import Form3 from './Form3';
 import Form4 from './Form4';
-import Packages from '@/pages/Packages';
-import Link from 'next/link';
 import Button from './Button';
 
 const DropDown = () => {
@@ -24,12 +22,7 @@ const DropDown = () => {
         return <Form4 />;
       } else if (isSelected.type === 'Round Trip') {
         return <Form2 />;
-      } else if(isSelected.type ==='Ready Mate Packages') {
-        return <div>
-            <Button text={'Continue'} link={'./Packages'}/>
-        </div>;
-      }
-      else{
+      } else if(isSelected.type ==='Applying Visa') {
         return <Form3/>
       }
     }

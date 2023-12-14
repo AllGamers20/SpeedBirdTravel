@@ -51,7 +51,7 @@ const Form2 = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center w-full rounded gap-6">
+      <div className="flex flex-col items-center rounded gap-6">
         <div className="flex flex-col items-center justify-center gap-6">
           <input
             type="text"
