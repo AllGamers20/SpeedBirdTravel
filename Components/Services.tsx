@@ -1,6 +1,6 @@
 import React from 'react';
 import HeadLine from './HeadLine';
-import { data } from '@/pages/_data';
+import { data } from '@/Data/_data';
 
 const Services = () => {
   return (
