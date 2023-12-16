@@ -39,7 +39,7 @@ const Card = ({ image, title }: { image: any; title: any }) => {
       className="rounded-xl relative overflow-hidden group hover:scale-105 hover:shadow-md duration-300"
     >
       <Link href="./Form">
-        <Image
+        <img
           src={image}
           alt="/"
           className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
