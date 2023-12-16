@@ -41,8 +41,8 @@ const Footer = () => {
               </Link>
             </div>
           <p className='text-[16px] font-medium text-white'>Privacy Policy | @{new Date().getFullYear()} Speed Bird International<br/>Travel And Tourisim <br/>{" "}
-          <Link href={'https://wa.me/+96171367510'} target='_blank' className='hover:text-main'>
-            +961 71 / 367/ 510
+          <Link href={'mailto:Info@travelspeedbird.com'} target='_blank' className='hover:text-main'>
+            Info@travelspeedbird.com
           </Link></p>
           </div>
           <div className='flex flex-col gap-8 relative '>
