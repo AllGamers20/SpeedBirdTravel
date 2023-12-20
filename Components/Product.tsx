@@ -10,7 +10,6 @@ const Product = () => {
             <Card image="/assets/spain.png" title='Spain'/>
             <Card image="/assets/Bali.png" title='Bali'/>
             <Card image="/assets/dubai.png" title='Dubai'/>
-            <Card image="/assets/Paris.png" title='Paris'/>
             <Card image="/assets/china.png" title='China'/>
             <Card image="/assets/antalya.png" title='Antalya'/>
             <Card image="/assets/cyprus.png" title='Cyprus'/>
