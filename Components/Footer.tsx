@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex justify-between flex-col md:flex-row items-center md:items-start md:gap-[5rem] text-left'>
           <div className='flex flex-col w-1/2 md:p-0 py-4 gap-8'>
             <Logo/>
-            <p className='text-[15px] font-medium text-main'>One of the best leading travel <br/>agencies in Lebanon. Feel free to <br/>contact us anytiime!</p>
+            <p className='text-[15px] font-medium text-main'>Find Your WanderRust <br /><p className='text-lime-300'>WITH US</p></p>
             <div className='flex gap-7 text-[18px] text-main justify-center md:justify-start'>
             <Link
                 href={"https://www.facebook.com/SpeedbirdLebanon"}
@@ -47,21 +47,21 @@ const Footer = () => {
           </div>
           <div className='flex flex-col gap-8 relative '>
             <p className='text-[22px] text-lime-500 font-bold footer-main'>Services</p>
-            <span className='top-[33px] absolute w-[7rem] h-[4px] bg-main'></span>
+            <span className='top-[33px] absolute w-[10rem] h-[4px] bg-main'></span>
             <p className="text-[16px]  cursor-pointer text-white font-medium">
                 Visa for All Countries
               </p>
               <p className="text-[16px]  text-white font-medium ">
-                Best Packages
+                ReadyMatePackages
               </p>
               <p className="text-[16px]  text-white font-medium ">
-                Best Hotels
+                HotelsWithBestRates
               </p>
               <p className="text-[16px]  text-white font-medium ">
-                Best Price
+                PriceForAllTypesOfPeople
               </p>
               <p className="text-[16px]  text-white font-medium ">
-                Working The Best For People 
+                24/7 Contact
               </p>
           </div>
           <div className='flex flex-col gap-8 relative'>
