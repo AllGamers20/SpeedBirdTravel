@@ -58,7 +58,7 @@ const AboutUS = () => {
       <div className='flex flex-wrap justify-center items-center flex-col gap-6 p-4 px-4 py-16'>
         <HeadLine title={'About Us'} />
         <div className='flex items-center justify-center flex-col gap-6 '>
-          <p className='text-center text-xl md:text-3xl p-6  text-black font-nunito'>
+          <p className='text-center text-xl md:text-3xl p-6  text-black'>
             Speed Bird Travel Agency is your passport to exceptional travel experiences.  Founded by passionate travelers, our mission is to make your journeys stress-free and unforgettable.
           </p>
           <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-6 px-20 py-20 '>

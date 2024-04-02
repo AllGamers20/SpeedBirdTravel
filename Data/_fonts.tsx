@@ -25,9 +25,3 @@ export const AirSpace = LocalFont({
 })
 
 
-export const nunito = Nunito({
-    variable: '--font-nunito',
-    weight: '400',
-    subsets: ['latin'],
-
-})
