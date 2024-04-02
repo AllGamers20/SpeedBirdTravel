@@ -28,6 +28,6 @@ module.exports = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     contentDispositionType: 'inline',
     remotePatterns: [],
-    unoptimized: false,
+    unoptimized: true,
   },
 };
